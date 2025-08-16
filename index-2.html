@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>INTERNATIONAL BUSINESS MANAGEMENT CONSULTANT INC. | Bulk Buying &amp; Global Shipping</title>
+<meta content="End-to-end bulk purchasing and international shipping brokerage. Source, inspect, ship, and deliver worldwide with confidence." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --bg: #0a0f1c;
+      --bg-2: #0e1a36;
+      --text: #111827;
+      --muted: #4b5563;
+      --card: #ffffff;
+      --brand: #f1c40f;
+      --brand-2: #1f6feb;
+      --surface: #f4f6fb;
+      --ring: rgba(31, 111, 235, .25);
+      --radius: 16px;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.06);
+      --shadow-md: 0 8px 24px rgba(0,0,0,.12);
+      --shadow-lg: 0 24px 48px rgba(0,0,0,.18);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--text); }
+    img { max-width: 100%; display: block; }
+    a { color: var(--brand-2); text-decoration: none; }
+    .container { width: min(1200px, 92%); margin: 0 auto; }
+
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,.85);
+      backdrop-filter: saturate(180%) blur(10px);
+      border-bottom: 1px solid rgba(17,24,39,.06);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .brand { display: flex; align-items: center; gap: 12px; font-family: Montserrat, sans-serif; font-weight: 700; letter-spacing:.2px; }
+    .logo {
+      width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
+      background: linear-gradient(145deg, var(--brand), #ffd95a);
+      color: #0a0f1c; font-weight: 800;
+      box-shadow: var(--shadow-sm);
+    }
+    nav ul { list-style: none; display: flex; gap: 24px; margin: 0; padding: 0; }
+    nav a { color: #111827; font-weight: 600; opacity:.85; }
+    nav a:hover { opacity: 1; }
+    .cta { background: var(--brand); color: #0a0f1c; padding: 10px 16px; border-radius: 999px; font-weight: 800; border: none; cursor: pointer; box-shadow: var(--shadow-sm); }
+    .cta:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+    .menu-btn { display:none; background:none; border:none; font-size: 28px; }
+
+    @media (max-width: 900px){
+      nav ul { display:none; position: absolute; top: 64px; left: 0; right: 0; background: #fff; padding: 16px 24px; border-bottom:1px solid rgba(0,0,0,.06); }
+      nav ul.open { display: grid; gap: 12px; }
+      .menu-btn { display:block; }
+      .cta { display: none; }
+    }
+
+    .hero { position: relative; background: radial-gradient(1200px 600px at 70% -50%, #274690 0%, #0a0f1c 60%); color: #fff; overflow: hidden; }
+    .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 48px; padding: 80px 0; }
+    .hero h1 { font-family: Montserrat, sans-serif; font-size: clamp(28px, 4.5vw, 56px); line-height: 1.08; margin: 0 0 16px; }
+    .hero p { font-size: clamp(14px, 1.6vw, 18px); opacity: .9; margin: 0 0 24px; }
+    .hero .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary { background: var(--brand); color:#0a0f1c; border: none; padding: 12px 18px; font-weight: 800; border-radius: 999px; cursor: pointer; }
+    .btn-secondary { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.35); padding: 12px 18px; font-weight: 700; border-radius: 999px; cursor: pointer; }
+
+    .hero-art { position: relative; }
+    .card { background: #ffffff; color: var(--text); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow-lg); display: grid; gap: 10px; }
+
+    section { padding: 80px 0; }
+    .section-head { text-align: center; margin-bottom: 40px; }
+    .eyebrow { color: var(--brand-2); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: 12px; }
+    h2 { font-family: Montserrat, sans-serif; font-size: clamp(22px, 3vw, 36px); margin: 8px 0 0; }
+    .muted { color: var(--muted); }
+
+    .grid { display: grid; gap: 20px; }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 900px){ .grid-3, .grid-2 { grid-template-columns: 1fr; } }
+
+    .feature { background: var(--card); padding: 24px; border-radius: var(--radius); box-shadow: var(--shadow-md); border: 1px solid rgba(17,24,39,.06); }
+    .feature h3 { margin: 10px 0 8px; font-size: 18px; }
+
+    .steps { counter-reset: step; }
+    .step { display: grid; grid-template-columns: 64px 1fr; gap: 16px; align-items: start; background: #fff; border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow-sm); border:1px solid rgba(17,24,39,.06); }
+    .step-num { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; background: #111827; color: #fff; }
+
+    .testimonial { background: #fff; border: 1px solid rgba(17,24,39,.06); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow-md); }
+    .quote { font-style: italic; }
+
+    .contact-wrap { display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; align-items: start; }
+    @media (max-width: 900px){ .contact-wrap { grid-template-columns: 1fr; } }
+    form { background: #fff; padding: 22px; border-radius: var(--radius); box-shadow: var(--shadow-md); border:1px solid rgba(17,24,39,.06); }
+    .field { display: grid; gap: 8px; margin-bottom: 14px; }
+    .field label { font-weight: 600; font-size: 14px; }
+    .field input, .field select, .field textarea { border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px; font: inherit; }
+    .field input:focus, .field select:focus, .field textarea:focus { outline: 3px solid var(--ring); border-color: var(--brand-2); }
+    .helper { font-size: 12px; color: var(--muted); }
+
+    footer { background: #0b1224; color: #b6c2d9; padding: 40px 0; }
+    .footer-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 20px; }
+    @media (max-width: 900px){ .footer-grid { grid-template-columns: 1fr; gap: 6px; } }
+    .footer-brand { display: flex; align-items: center; gap: 12px; }
+    .small { font-size: 12px; opacity: .85; }
+
+    .badge { display:inline-flex; align-items:center; gap:8px; background: rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2); color:#fff; border-radius:999px; padding:6px 10px; font-size:12px; }
+    .pill { display:inline-block; padding:6px 10px; background:#fff; border-radius:999px; font-size:12px; font-weight:700; }
+    .surface { background: var(--surface); }
+  </style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<div class="brand">
+<div class="logo">IM</div>
+<div>
+<div style="font-weight:800; line-height:1">INTERNATIONAL BUSINESS MANAGEMENT CONSULTANT INC.</div>
+<div class="small" style="margin-top:2px;color:#6b7280">Buy • Inspect • Ship • Deliver</div>
+</div>
+</div>
+<nav>
+<button aria-label="Toggle menu" class="menu-btn" onclick="toggleMenu()">☰</button>
+<ul id="menu">
+<li><a href="#home" onclick="closeMenu()">Home</a></li>
+<li><a href="#about" onclick="closeMenu()">About</a></li>
+<li><a href="#services" onclick="closeMenu()">Services</a></li>
+<li><a href="#process" onclick="closeMenu()">How It Works</a></li>
+<li><a href="#testimonials" onclick="closeMenu()">Testimonials</a></li>
+<li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+</ul>
+</nav>
+<button class="cta" onclick="scrollToId('contact')">Get a Free Quote</button>
+</div>
+</header>
+<section class="hero" id="home">
+<div class="container hero-inner">
+<div>
+<span class="badge">End‑to‑End Global Brokerage</span>
+<h1>Your trusted partner for bulk purchasing &amp; global shipping.</h1>
+<p>We help you <strong>source</strong> from any country, <strong>inspect</strong> for quality, <strong>ship</strong> via sea/air, handle <strong>customs</strong>, and <strong>deliver</strong> to your door. Simple, secure, and cost‑effective.</p>
+<div class="actions">
+<button class="btn-primary" onclick="scrollToId('contact')">Get a Free Quote</button>
+<button class="btn-secondary" onclick="scrollToId('services')">Explore Services</button>
+</div>
+</div>
+<div class="hero-art">
+<div class="card">
+<strong>Popular Routes</strong>
+<div class="muted" style="font-size:14px">USA → UAE · Canada → India · EU → USA · China → Canada</div>
+</div>
+<div class="card" style="margin-top:16px">
+<strong>What we handle</strong>
+<div class="muted" style="font-size:14px">Consumer goods · Industrial parts · Electronics · Furnishings · Auto spares</div>
+</div>
+<div class="card" style="margin-top:16px; display:grid; grid-template-columns: 1fr 1fr; gap:10px">
+<div>
+<div class="muted small">Avg. Inspection Time</div>
+<div style="font-weight:800; font-size:20px">24–72 hrs</div>
+</div>
+<div>
+<div class="muted small">Global Partners</div>
+<div style="font-weight:800; font-size:20px">150+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="surface" id="about">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">About</div>
+<h2>Experienced, connected, and obsessed with on‑time delivery.</h2>
+<p class="muted">We combine supplier discovery, price negotiation, quality control, freight, and customs into one accountable service.</p>
+</div>
+<div class="grid grid-3">
+<div class="feature">
+<div class="pill">Owner</div>
+<h3>JOHN</h3>
+<p class="muted">Principal broker and point of contact for high‑value bulk purchases and logistics.</p>
+</div>
+<div class="feature">
+<div class="pill">Global</div>
+<h3>Network you can use today</h3>
+<p class="muted">Sourcing and inspection partners across the USA, Canada, Europe, Middle East, and Asia.</p>
+</div>
+<div class="feature">
+<div class="pill">Secure</div>
+<h3>Transparent, compliant, insured</h3>
+<p class="muted">Documentation, customs, and insurance handled correctly to keep your shipment moving.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="services">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Services</div>
+<h2>Everything you need for bulk buying &amp; cross‑border delivery.</h2>
+<p class="muted">Pick a complete end‑to‑end service or only the steps you need.</p>
+</div>
+<div class="grid grid-3">
+<div class="feature">
+<h3>Bulk Purchasing</h3>
+<p class="muted">Find verified suppliers, compare quotes, and negotiate best‑value deals.</p>
+</div>
+<div class="feature">
+<h3>Quality Assurance</h3>
+<p class="muted">On‑site inspections with photo/video proof before payment and shipment.</p>
+</div>
+<div class="feature">
+<h3>Freight &amp; Shipping</h3>
+<p class="muted">Sea (FCL/LCL) and air freight, cargo consolidation, and tracking updates.</p>
+</div>
+<div class="feature">
+<h3>Customs &amp; Compliance</h3>
+<p class="muted">Correct HS codes, invoices, and permits for smooth clearance.</p>
+</div>
+<div class="feature">
+<h3>Insurance &amp; Risk</h3>
+<p class="muted">Cargo insurance and risk controls to protect your purchase.</p>
+</div>
+<div class="feature">
+<h3>Door‑to‑Door Delivery</h3>
+<p class="muted">Final‑mile transport from port to warehouse or storefront.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="surface" id="process">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">How it works</div>
+<h2>Clear steps. Single point of accountability.</h2>
+</div>
+<div class="grid grid-2 steps">
+<div class="step">
+<div class="step-num">1</div>
+<div>
+<h3>Send your request</h3>
+<p class="muted">Tell us what you want to buy, quantity, origin, and destination.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">2</div>
+<div>
+<h3>Get a transparent quote</h3>
+<p class="muted">We price purchase, inspection, shipping, customs, and delivery.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">3</div>
+<div>
+<h3>We purchase &amp; inspect</h3>
+<p class="muted">We only move forward after quality checks meet your standards.</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">4</div>
+<div>
+<h3>Ship &amp; deliver</h3>
+<p class="muted">Track your cargo. We manage customs and deliver to your door.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="testimonials">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Testimonials</div>
+<h2>What our clients say</h2>
+</div>
+<div class="grid grid-3">
+<div class="testimonial">
+<p class="quote">“They handled a 40‑ft container from Canada to Dubai flawlessly. Clear updates and no surprises.”</p>
+<p class="muted">— Kareem A., Importer</p>
+</div>
+<div class="testimonial">
+<p class="quote">“We sourced electronics from the US at a great price. Inspection photos gave us full confidence.”</p>
+<p class="muted">— Sophia L., Retailer</p>
+</div>
+<div class="testimonial">
+<p class="quote">“Customs paperwork was perfect. Delivery arrived exactly when promised.”</p>
+<p class="muted">— Vikram P., Operations Lead</p>
+</div>
+</div>
+</div>
+</section>
+<section class="surface" id="contact">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Get a quote</div>
+<h2>Tell us what you need. We’ll price it end‑to‑end.</h2>
+</div>
+<div class="contact-wrap">
+<form action="contact.php" aria-label="Quote request form" id="quoteForm" method="POST"><input name="botcheck" style="display:none" type="text" value=""/>
+<div class="field">
+<label for="name">Your name</label>
+<input id="name" name="name" placeholder="John Doe" required="" type="text"/>
+</div>
+<div class="field">
+<label for="email">Email</label>
+<input id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+</div>
+<div class="field">
+<label for="phone">Phone / WhatsApp</label>
+<input id="phone" name="phone" placeholder="+1 555 123 4567" type="tel"/>
+</div>
+<div class="grid grid-2">
+<div class="field">
+<label for="origin">Origin Country</label>
+<input id="origin" name="origin" placeholder="United States" required="" type="text"/>
+</div>
+<div class="field">
+<label for="destination">Destination Country</label>
+<input id="destination" name="destination" placeholder="United Arab Emirates" required="" type="text"/>
+</div>
+</div>
+<div class="field">
+<label for="product">Product type &amp; quantity</label>
+<textarea id="product" name="product" placeholder="e.g., 5,000 units of LED fixtures" required="" rows="4"></textarea>
+</div>
+<div class="field">
+<label for="notes">Notes</label>
+<textarea id="notes" name="notes" placeholder="Incoterms, deadlines, special handling…" rows="3"></textarea>
+<div class="helper">We’ll reply within one business day.</div>
+</div>
+<button class="btn-primary" type="submit">Request Quote</button>
+<div class="helper" id="formMsg" style="margin-top:10px"></div>
+</form>
+<div>
+<div class="feature">
+<h3>Office</h3>
+<p class="muted">3070 Rotary Way, Unit 221<br/>Burlington, Ontario, L7M 0H1<br/>Canada</p>
+</div>
+<div class="feature" style="margin-top:16px">
+<h3>Contact</h3>
+<p class="muted">Email: <a href="mailto:info@globalibmc.com">info@globalibmc.com</a><br/>Phone/WhatsApp: <a href="#" rel="noreferrer" target="_blank">+1 469-317-0620</a></p>
+</div>
+<div class="feature" style="margin-top:16px">
+<h3>Compliance &amp; Coverage</h3>
+<p class="muted">We follow destination import rules and commodity restrictions. Cargo insurance available on request.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container footer-grid">
+<div>
+<div class="footer-brand">
+<div class="logo">IM</div>
+<div>
+<div style="font-weight:800">INTERNATIONAL BUSINESS MANAGEMENT CONSULTANT INC.</div>
+<div class="small">Buy • Inspect • Ship • Deliver</div>
+</div>
+</div>
+<p class="small" style="margin-top:10px">© <span id="year"></span> INTERNATIONAL BUSINESS MANAGEMENT CONSULTANT INC. All rights reserved.</p>
+</div>
+<div>
+<div style="font-weight:700; margin-bottom:8px">Company</div>
+<div class="small"><a href="#about">About</a></div>
+<div class="small"><a href="#services">Services</a></div>
+<div class="small"><a href="#process">How it works</a></div>
+</div>
+<div>
+<div style="font-weight:700; margin-bottom:8px">Support</div>
+<div class="small"><a href="#contact">Contact</a></div>
+<div class="small"><a href="#contact">Get a quote</a></div>
+</div>
+<div>
+<div style="font-weight:700; margin-bottom:8px">Social</div>
+<div class="small"><a href="#">LinkedIn</a></div>
+<div class="small"><a href="#">Facebook</a></div>
+<div class="small"><a href="#">Instagram</a></div>
+</div>
+</div>
+</footer>
+<script></script>
+</body>
+</html>
